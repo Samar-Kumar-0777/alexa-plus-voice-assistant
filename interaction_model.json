@@ -1,0 +1,78 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "alexa plus",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuickSummaryIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me a quick summary",
+                        "what is my summary",
+                        "summarize my day",
+                        "give me a summary",
+                        "read my daily summary",
+                        "brief me"
+                    ]
+                },
+                {
+                    "name": "AddTaskIntent",
+                    "slots": [
+                        {
+                            "name": "TaskContent",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{TaskContent}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add {TaskContent} to my list",
+                        "remind me to {TaskContent}",
+                        "create a task to {TaskContent}",
+                        "add a new task {TaskContent}",
+                        "i need to {TaskContent}",
+                        "add task {TaskContent}"
+                    ]
+                },
+                {
+                    "name": "AskAIAgentIntent",
+                    "slots": [
+                        {
+                            "name": "Query",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{Query}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "ask the agent to {Query}",
+                        "can you figure out {Query}",
+                        "research {Query}",
+                        "tell me about {Query}",
+                        "ask ai {Query}",
+                        "help me with {Query}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
